@@ -1,0 +1,95 @@
+#game-board {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    border: 1px solid black;
+}
+.player, .invader {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    background: url('fighter-ship.png') no-repeat center;
+    background-size: contain;
+    transition: left 0.1s ease-out;
+}
+.invader {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('space-invader.png') no-repeat center;
+    background-size: contain;
+    transition: left 0.1s ease-out;
+
+}
+
+.bullet {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: url('bullet.png') no-repeat center;
+    background-size: contain;
+    transition: left 0.1s ease-out;
+
+}
+
+#game-board {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    border: 1px solid black;
+    background-image: url('stars.jpg');
+    background-size: cover;
+    animation: moveBackground 5s linear infinite;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px; /* adjust as needed */
+}
+
+#leaderboard {
+    align-self: flex-end;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-between;
+    width: 800px; /* same as #game-board */
+    height: 40px; /* adjust as needed */
+    background: black;
+    color: lime;
+    font-family: 'Press Start 2P', cursive; /* this is a retro video game font available on Google Fonts */
+    font-size: 15px; /* adjust as needed */
+    padding: 0px;
+    box-shadow: inset 0 0 10px #0000ff;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+#time {
+    margin-right: 20px; /* adjust as needed */
+}
+
+#high-score-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+#high-score-name {
+    margin-right: 20px; /* adjust as needed */
+}
+
+#high-score-title {
+    margin-right: 20px; /* adjust as needed */
+}
